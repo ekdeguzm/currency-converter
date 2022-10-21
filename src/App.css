@@ -9,5 +9,12 @@ body {
 
 h1 {
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  border: 1px solid #333;
+  border-radius: .3em;
+  padding: .25em;
+  width: 7em;
 }
