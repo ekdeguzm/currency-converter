@@ -25,10 +25,12 @@ function App() {
       <h1>Convert</h1>
       <CurrencyRow 
         currencyOptions={currencyOptions}
+        selectedCurrency={fromCurrency}
       />
       <div className="equals">=</div>
       <CurrencyRow 
         currencyOptions={currencyOptions}
+        selectedCurrency={toCurrency}
       />
     </>
   );
