@@ -31,6 +31,7 @@ function App() {
       <CurrencyRow 
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
+        onChangeCurrency={e => setToCurrency(e.target.)}
       />
     </>
   );
