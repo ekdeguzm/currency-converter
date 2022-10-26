@@ -13,7 +13,15 @@ function App() {
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
 
   let toAmount, fromAmount
-  
+  if (amountInFromCurrency) {
+    fromAmount = amount
+    toAmount = amount * exchangeRate
+  } else {
+    toAmount = amount
+    fromAmount = amount / exchangeRate
+  }
+
+
   useEffect(() => {
     fetch(BASE_URL)
       .then(res => res.json())
