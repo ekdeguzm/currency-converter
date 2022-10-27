@@ -34,6 +34,10 @@ function App() {
       })
   }, [])
 
+  useEffect(() => {
+
+  }, [fromCurrency, toCurrency])
+
   function handleFromAmountChange(e) {
     setAmount(e.target.value)
     setAmountInFromCurrency(true)
@@ -60,6 +64,7 @@ function App() {
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
         onChangeCurrency={e => setToCurrency(e.target.value)}
+        onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
     </>
