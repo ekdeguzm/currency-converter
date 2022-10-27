@@ -35,7 +35,8 @@ function App() {
   }, [])
 
   function handleFromAmountChange(e) {
-    
+    setAmount(e.target.value)
+    setAmountInFromCurrency(true)
   }
 
   return (
