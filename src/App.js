@@ -39,6 +39,12 @@ function App() {
     setAmountInFromCurrency(true)
   }
 
+  function handleToAmountChange(e) {
+    setAmount(e.target.value)
+    setAmountInFromCurrency(false)
+  }
+
+
   return (
     <>
       <h1>Convert</h1>
