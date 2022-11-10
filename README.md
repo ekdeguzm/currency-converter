@@ -1,6 +1,7 @@
 # Currency Converter
 This project uses JavaScript, HTML, CSS, and React to create a currency converter.
 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
